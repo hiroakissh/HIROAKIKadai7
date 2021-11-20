@@ -14,7 +14,8 @@ class PositiveViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        num1TextField.keyboardType = .numberPad
+        num2TextField.keyboardType = .numberPad
     }
     @IBAction private func positivecalcButton(_ sender: Any) {
     }
