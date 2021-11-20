@@ -12,9 +12,10 @@ class PositiveViewController: UIViewController {
     @IBOutlet private weak var num2TextField: UITextField!
     @IBOutlet private weak var positiveTotalLabel: UILabel!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    @IBAction private func positivecalcButton(_ sender: Any) {
     }
 }

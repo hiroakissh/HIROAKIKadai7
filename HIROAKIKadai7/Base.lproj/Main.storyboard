@@ -33,6 +33,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <action selector="positivecalcButton:" destination="ndz-MG-XOf" eventType="touchUpInside" id="7fE-lW-yIZ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZ5-r8-YMa">
                                 <rect key="frame" x="150" y="334" width="115" height="21"/>
@@ -46,6 +49,11 @@
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="NOF-jM-Jee"/>
+                    <connections>
+                        <outlet property="num1TextField" destination="rUs-nr-elm" id="ZLV-Ee-7qw"/>
+                        <outlet property="num2TextField" destination="waU-r8-bFx" id="adU-5g-JXs"/>
+                        <outlet property="positiveTotalLabel" destination="KZ5-r8-YMa" id="s6z-N8-56C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AtA-yx-JmW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
