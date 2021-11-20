@@ -72,7 +72,7 @@
         <!--Item 2-->
         <scene sceneID="oVv-tp-wNd">
             <objects>
-                <viewController id="0zn-Hf-gex" customClass="PositiveViewController" customModule="HIROAKIKadai7" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0zn-Hf-gex" customClass="NegativeViewController" customModule="HIROAKIKadai7" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5NW-mu-vYc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,7 +104,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f5e-uu-nm3"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="ZgO-Ay-J54"/>
                 </viewController>
@@ -114,6 +114,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
