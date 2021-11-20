@@ -17,6 +17,14 @@ class PositiveViewController: UIViewController {
         num1TextField.keyboardType = .numberPad
         num2TextField.keyboardType = .numberPad
     }
+
     @IBAction private func positivecalcButton(_ sender: Any) {
+        let num1 = Int(num1TextField.text ?? "") ?? 0
+        let num2 = Int(num2TextField.text ?? "") ?? 0
+
+        positiveTotalLabel.text = String(num1 + num2)
+
+        num1TextField.endEditing(true)
+        num2TextField.endEditing(true)
     }
 }
