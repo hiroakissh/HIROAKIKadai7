@@ -8,22 +8,23 @@
 import UIKit
 
 class NegativeViewController: UIViewController {
+    @IBOutlet private weak var num1TextField: UITextField!
+    @IBOutlet private weak var num2TextField: UITextField!
+    @IBOutlet private weak var negativeTotalLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        num1TextField.keyboardType = .numberPad
+        num2TextField.keyboardType = .numberPad
     }
-    
 
-    /*
-    // MARK: - Navigation
+    @IBAction private func negativeCalcButton(_ sender: Any) {
+        let num1 = Int(num1TextField.text ?? "") ?? 0
+        let num2 = Int(num2TextField.text ?? "") ?? 0
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        negativeTotalLabel.text = String(num1 - num2)
+
+        num1TextField.endEditing(true)
+        num2TextField.endEditing(true)
     }
-    */
-
 }
